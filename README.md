@@ -4,6 +4,8 @@
 
 Todo App - React Single Page Application.
 
+Test task for the position of "Junior Frontend Developer" (Mindbox)
+
 ## Getting Started
 
 To install and use the project, follow these steps:

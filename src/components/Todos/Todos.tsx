@@ -23,10 +23,6 @@ export const Todos = () => {
     );
   };
 
-  const setFilter = (filter: Filters) => {
-    setActiveFilter(filter);
-  };
-
   const getTodosByFilter = (filter: Filters, todos: ITodo[]) => {
     switch (filter) {
       case 'all':
@@ -42,6 +38,10 @@ export const Todos = () => {
 
   const removeCompletedTodos = () => {
     setTodos(todos.filter((todo) => !todo.isCompleted));
+  };
+
+  const setFilter = (filter: Filters) => {
+    setActiveFilter(filter);
   };
 
   return (
