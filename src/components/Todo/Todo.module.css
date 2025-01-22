@@ -6,6 +6,16 @@
   padding: 20px;
 }
 
+.todo_checkbox {
+  cursor: pointer;
+  width: 25px;
+}
+
 .todo_text {
   padding-left: 15px;
+}
+
+.isCompleted {
+  color: var(--text-secondary);
+  text-decoration: line-through;
 }
