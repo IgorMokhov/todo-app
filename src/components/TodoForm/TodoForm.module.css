@@ -1,0 +1,19 @@
+.form {
+  background-color: var(--secondary-color);
+}
+
+.form input {
+  width: 100%;
+  border: none;
+  padding: 20px;
+  font-size: var(--font-md);
+}
+
+.form input::placeholder {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.form input:focus {
+  outline: none;
+}
