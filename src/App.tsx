@@ -1,9 +1,10 @@
 import './App.css';
+import { Todos } from './components/Todos/Todos';
 
 export const App = () => {
   return (
     <main>
-      <h1>Todo App</h1>
+      <Todos />
     </main>
   );
 };
