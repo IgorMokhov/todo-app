@@ -7,8 +7,11 @@
 }
 
 .todo_checkbox {
-  cursor: pointer;
   width: 25px;
+  height: 25px;
+  margin: auto 0;
+  vertical-align: middle;
+  cursor: pointer;
 }
 
 .todo_text {
