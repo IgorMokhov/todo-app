@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+  /* color */
+  --background-color: #ededed;
+  --secondary-color: #ffffff;
+  --text-primary: #1a1a1a;
+  --text-secondary: #e0e0e0;
+  --accent-color: #ae8888;
+
+  /* fonts */
+  --font-sm: 18px;
+  --font-md: 28px;
+  --font-lg: 100px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  font-family: 'Nunito', 'serif';
+  font-weight: 300;
+  font-size: var(--font-md);
+}
