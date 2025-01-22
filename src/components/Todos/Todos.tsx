@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { ITodo } from '../../types/todo';
 import { TodoForm } from '../TodoForm/TodoForm';
 import { TodoList } from '../TodoList/TodoList';
@@ -40,6 +40,10 @@ export const Todos = () => {
     }
   };
 
+  const removeCompletedTodos = () => {
+    setTodos(todos.filter((todo) => !todo.isCompleted));
+  };
+
   return (
     <section className={styles.todos}>
       <h1 className={styles.todos_title}>todos</h1>
@@ -50,6 +54,7 @@ export const Todos = () => {
       />
       <TodoActions
         todos={todos}
+        removeCompletedTodos={removeCompletedTodos}
         activeFilter={activeFilter}
         setFilter={setFilter}
       />

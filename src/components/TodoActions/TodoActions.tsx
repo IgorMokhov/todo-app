@@ -7,12 +7,14 @@ interface ITodoActionsProps {
   todos: ITodo[];
   activeFilter: Filters;
   setFilter: (filter: Filters) => void;
+  removeCompletedTodos: () => void;
 }
 
 export const TodoActions = ({
   todos,
   activeFilter,
   setFilter,
+  removeCompletedTodos,
 }: ITodoActionsProps) => {
   const activeTodosCount = todos.filter(
     (todo) => todo.isCompleted === false
@@ -24,7 +26,10 @@ export const TodoActions = ({
     <div className={styles.actions}>
       <span>{activeTodosCount} items left</span>
       <TodoFilters activeFilter={activeFilter} setFilter={setFilter} />
-      <button className={styles.actions_clear_btn} onClick={() => {}}>
+      <button
+        className={styles.actions_clear_btn}
+        onClick={() => removeCompletedTodos()}
+      >
         Clear completed
       </button>
     </div>
