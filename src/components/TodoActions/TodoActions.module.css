@@ -1,0 +1,14 @@
+.actions {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-sm);
+  background-color: var(--secondary-color);
+  padding: 10px;
+}
+
+.actions_clear_btn {
+  all: unset;
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+}
