@@ -27,7 +27,7 @@ To install and use the project, follow these steps:
 To start the development server, use the following command:
 
 ```sh
-  npm run dev
+  npm run start
 ```
 
 Visit the provided local URL in your browser to explore the "PTL_Frontend" application.
