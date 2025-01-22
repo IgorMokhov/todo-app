@@ -1,0 +1,18 @@
+.filters {
+  display: flex;
+  column-gap: 15px;
+}
+
+.filters_btn {
+  all: unset;
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+  padding: 0 5px;
+  border: 1px solid var(--secondary-color);
+}
+
+.isActive {
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+}
